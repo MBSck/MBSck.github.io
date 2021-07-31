@@ -2102,6 +2102,26 @@ input, select, textarea {
 			border-radius: 0.35em;
 			display: block;
 		}
+		
+		/* Code Added by Marten 31.07.2021 (Credit to: https://www.tutorialrepublic.com/codelab.php?topic=faq&file=placing-text-over-an-image-with-css, https://www.cvwdesign.com/blog/css-tip-placing-text-on-top-of-an-image) */
+
+		.image p {
+			position: absolute;
+			z-index: 999;
+			left: 0;
+			right:0;
+			top: 40%;
+			padding: 10px;
+			border: 1px solid #FFF;
+			width: 218px;
+			color: #FFF;
+			margin: 5px;
+			
+			text-align: center;
+			width: 60%;
+		}
+		
+		/* Added code end */
 
 		.image.left {
 			float: left;
@@ -3219,23 +3239,3 @@ input, select, textarea {
 			}
 
 	}
-
-/* Additional CSS - Added by Marten */
-
-/* Text on top of image. Credit: https://www.cvwdesign.com/blog/css-tip-placing-text-on-top-of-an-image*/
-
-.text-box{
-	position: relative;
-	display: inline-block;
-	}
-	
-	.text-box.text{
-		position: absolute;
-		z-index: 999;
-		margin: 0 auto;
-		left: 0;
-		right: 0;
-		top: 40%; /* Adjust this value to move the positioned div up and down */
-		text-align: center;
-		width: 60%; /* Set the width of the positioned div */
-		}
