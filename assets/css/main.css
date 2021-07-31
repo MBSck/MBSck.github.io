@@ -2115,9 +2115,6 @@ input, select, textarea {
 			flex-direction: column;
 			align-items: center;
 			display: flex;
-			
-			font-size: large:
-			color: white;
 		}
 		
 		/* Added code end */
@@ -3238,3 +3235,10 @@ input, select, textarea {
 			}
 
 	}
+
+/* Additional code; Added by Marten 01.08.2021 */
+
+	.white-big-text {
+		color: white;
+		font-size: 40px;
+		}
