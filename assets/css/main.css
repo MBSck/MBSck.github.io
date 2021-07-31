@@ -2105,15 +2105,16 @@ input, select, textarea {
 		
 		/* Code Added by Marten 31.07.2021 (Credit to: https://www.tutorialrepublic.com/codelab.php?topic=faq&file=placing-text-over-an-image-with-css, https://www.cvwdesign.com/blog/css-tip-placing-text-on-top-of-an-image) */
 
-		.image p {
+		.text {
+			width:100%;    
+			height:100%;
 			position: absolute;
-			
-			margin-left: auto;	/* Centering the text */
-			margin-right: auto;
-			
-			left: 0;
 			top: 0;
-			color: #FFF;
+			left: 0px;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			display: flex;
 		}
 		
 		/* Added code end */
