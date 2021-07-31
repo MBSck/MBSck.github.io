@@ -2107,18 +2107,13 @@ input, select, textarea {
 
 		.image p {
 			position: absolute;
-			z-index: 999;
 			left: 0;
-			right:0;
-			top: 40%;
+			top: 0;
 			padding: 10px;
 			border: 1px solid #FFF;
 			width: 218px;
 			color: #FFF;
 			margin: 5px;
-			
-			text-align: center;
-			width: 60%;
 		}
 		
 		/* Added code end */
