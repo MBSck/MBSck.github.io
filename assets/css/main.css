@@ -2115,6 +2115,9 @@ input, select, textarea {
 			flex-direction: column;
 			align-items: center;
 			display: flex;
+			
+			font-size: large:
+			color: #ffffff;
 		}
 		
 		/* Added code end */
