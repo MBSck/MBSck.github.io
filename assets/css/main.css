@@ -3222,7 +3222,7 @@ input, select, textarea {
 
 /* Additional CSS - Added by Marten */
 
-/* Text on top of image */
+/* Text on top of image. Credit: https://www.cvwdesign.com/blog/css-tip-placing-text-on-top-of-an-image*/
 
 .image-wrapper {
     position: relative;
@@ -3230,11 +3230,8 @@ input, select, textarea {
 }
 .image-wrapper p {
     position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    border: 1px solid #FFF;
-    width: 218px;
+    left: 200px;
+    top: -100px;
     color: #FFF;
     margin: 5px;
 }
