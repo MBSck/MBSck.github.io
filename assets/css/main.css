@@ -3224,14 +3224,18 @@ input, select, textarea {
 
 /* Text on top of image. Credit: https://www.cvwdesign.com/blog/css-tip-placing-text-on-top-of-an-image*/
 
-.image-wrapper {
-    position: relative;
-    width: 250px;
-}
-.image-wrapper p {
-    position: absolute;
-    left: 200px;
-    top: -300px;
-    color: #FFF;
-    margin: 5px;
-}
+.text-box{
+	position: relative;
+	display: inline-block;
+	}
+	
+	.text-box.text{
+		position: absolute;
+		z-index: 999;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: 40%; /* Adjust this value to move the positioned div up and down */
+		text-align: center;
+		width: 60%; /* Set the width of the positioned div */
+		}
