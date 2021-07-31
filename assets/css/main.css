@@ -3220,15 +3220,3 @@ input, select, textarea {
 
 	}
     
-/* Additional CSS */
-
-.gfg {
-        margin: 3%;
-        position: relative;
-    }
-    
-.text-over-picture-middle {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    }
