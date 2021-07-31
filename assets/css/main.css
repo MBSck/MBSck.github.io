@@ -3231,7 +3231,7 @@ input, select, textarea {
 .image-wrapper p {
     position: absolute;
     left: 200px;
-    top: -100px;
+    top: -300px;
     color: #FFF;
     margin: 5px;
 }
