@@ -3219,4 +3219,22 @@ input, select, textarea {
 			}
 
 	}
-    
+
+/* Additional CSS - Added by Marten */
+
+/* Text on top of image */
+
+.image-wrapper {
+    position: relative;
+    width: 250px;
+}
+.image-wrapper p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    border: 1px solid #FFF;
+    width: 218px;
+    color: #FFF;
+    margin: 5px;
+}
