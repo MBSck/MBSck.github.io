@@ -2107,6 +2107,10 @@ input, select, textarea {
 
 		.image p {
 			position: absolute;
+			
+			margin-left: auto;	/* Centering the text */
+			margin-right: auto;
+			
 			left: 0;
 			top: 0;
 			color: #FFF;
