@@ -3227,8 +3227,8 @@ input, select, textarea {
         position: relative;
     }
     
-.text-over-picture {
+.text-over-picture-middle {
     position: absolute;
-    top: 17px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     }
