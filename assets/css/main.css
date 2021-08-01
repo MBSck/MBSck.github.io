@@ -3235,10 +3235,3 @@ input, select, textarea {
 			}
 
 	}
-
-/* Additional code; Added by Marten 01.08.2021 */
-
-	.white-big-text {
-		color: white;
-		font-size: 40px;
-		}
