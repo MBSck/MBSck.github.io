@@ -60,13 +60,16 @@
   	<script src="assets/js/tools.js"></script>
 	</body>
 	<script>
-    includeHTML("html/frontpage/header.html", "header");
-    includeHTML("html/frontpage/main/about.html", "main");
-    includeHTML("html/frontpage/main/research.html", "main");
-    includeHTML("html/frontpage/main/publications.html", "main");
-    includeHTML("html/frontpage/main/code.html", "main");
-    includeHTML("html/frontpage/main/miscallaneous.html", "main");
-    includeHTML("html/frontpage/main/contact.html", "main");
-    includeHTML("html/frontpage/footer.html", "footer");
+    includeHTML([{ file: "html/frontpage/header.html", elementID: "header"}])
+    includeHTML([
+    	{ file: "html/frontpage/main/about.html", elementID: "header"},
+    	{ file: "html/frontpage/main/research.html", elementID: "main"},
+    	{ file: "html/frontpage/main/research.html", elementID: "main"},
+    	{ file: "html/frontpage/main/publications.html", elementID: "main"},
+    	{ file: "html/frontpage/main/code.html", elementID: "main"},
+    	{ file: "html/frontpage/main/miscallaneous.html", elementID: "main"},
+			{ file: "html/frontpage/main/contact.html", elementID: "main"}
+    ]);
+    includeHTML([{ file: "html/frontpage/footer.html", elementID: "footer"}]);
 	</script>
 </html>
