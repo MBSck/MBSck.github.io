@@ -17,20 +17,20 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-    Royalty free pictures
+  Royalty free pictures
 
-    Individual credit below:
-        Research.jpg        -   Photo by Philippe Donn (https://www.pexels.com/photo/milky-way-illustration-1169754/)
-        Publications.jpg    -   Photo by Pixabay (https://www.pexels.com/photo/books-in-black-wooden-book-shelf-159711/)
-        Codes.jpg           -   Photo by luis gomes from Pexels (https://www.pexels.com/photo/black-and-gray-laptop-computer-546819/)
-        General.jpg         -   Photo by Pixabay (https://www.pexels.com/photo/empty-brown-canvas-235985/)
-        About.jpg           -   Photo by Steve Johnson (https://www.pexels.com/photo/multicolored-abstract-painting-1266808/)
-        Contact.jpg         -   Photo by John-Mark Smith (https://www.pexels.com/photo/brown-paper-envelope-on-table-211290/)
+  Individual credit below:
+      Research.jpg        -   Photo by Philippe Donn (https://www.pexels.com/photo/milky-way-illustration-1169754/)
+      Publications.jpg    -   Photo by Pixabay (https://www.pexels.com/photo/books-in-black-wooden-book-shelf-159711/)
+      Codes.jpg           -   Photo by luis gomes from Pexels (https://www.pexels.com/photo/black-and-gray-laptop-computer-546819/)
+      General.jpg         -   Photo by Pixabay (https://www.pexels.com/photo/empty-brown-canvas-235985/)
+      About.jpg           -   Photo by Steve Johnson (https://www.pexels.com/photo/multicolored-abstract-painting-1266808/)
+      Contact.jpg         -   Photo by John-Mark Smith (https://www.pexels.com/photo/brown-paper-envelope-on-table-211290/)
 
-        Blog.jpg            -   Photo by Pixabay (https://www.pexels.com/photo/blog-icon-information-internet-262508/)
-        Languages.jpg       -   Photo by Pixabay (https://www.pexels.com/photo/yellow-tassel-159581/)
-        Travels.jpg         -   Photo by Belle Co from Pexels (https://www.pexels.com/photo/red-and-black-temple-surrounded-by-trees-photo-402028/)
-				Home.jpg						-	Photo by David Gonzales from Pexels (https://www.pexels.com/photo/brown-and-red-birdhouse-2640604/)
+      Blog.jpg            -   Photo by Pixabay (https://www.pexels.com/photo/blog-icon-information-internet-262508/)
+      Languages.jpg       -   Photo by Pixabay (https://www.pexels.com/photo/yellow-tassel-159581/)
+      Travels.jpg         -   Photo by Belle Co from Pexels (https://www.pexels.com/photo/red-and-black-temple-surrounded-by-trees-photo-402028/)
+			Home.jpg						-	Photo by David Gonzales from Pexels (https://www.pexels.com/photo/brown-and-red-birdhouse-2640604/)
 -->
 <html>
 	<head>
@@ -61,14 +61,16 @@
 	</body>
 	<script>
 		includeHTML([
-			{ file: "html/frontpage/header.html", elementId: "header" },
-  		{ file: "html/frontpage/main/about.html", elementId: "main" },
-  		{ file: "html/frontpage/main/research.html", elementId: "main" },
-  		{ file: "html/frontpage/main/publications.html", elementId: "main" },
-  		{ file: "html/frontpage/main/code.html", elementId: "main" },
-  		{ file: "html/frontpage/main/miscallaneous.html", elementId: "main" },
-  		{ file: "html/frontpage/main/contact.html", elementId: "main" },
-			{ file: "html/frontpage/footer.html", elementId: "footer" },
-		]);
+  		{ file: "html/frontpage/header.html", elementId: "header" }
+		]).then(() => includeHTML([
+    		{ file: "html/frontpage/main/about.html", elementId: "main" },
+    		{ file: "html/frontpage/main/research.html", elementId: "main" },
+    		{ file: "html/frontpage/main/publications.html", elementId: "main" },
+    		{ file: "html/frontpage/main/code.html", elementId: "main" },
+    		{ file: "html/frontpage/main/miscellaneous.html", elementId: "main" },
+    		{ file: "html/frontpage/main/contact.html", elementId: "main" }
+  		])).then(() => includeHTML([
+    		{ file: "html/frontpage/footer.html", elementId: "footer" }
+  		]));
 	</script>
 </html>

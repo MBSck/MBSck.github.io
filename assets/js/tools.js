@@ -41,10 +41,10 @@ function includeHTML(filesAndIds) {
       });
   };
 
-  // Load files sequentially in order
-  const promises = filesAndIds.reduce((chain, { file, elementId }) => {
-    return chain.then(() => loadFile(file, elementId));
-  }, Promise.resolve());
+  let promiseChain = Promise.resolve();
+  filesAndIds.forEach(({ file, elementId }) => {
+    promiseChain = promiseChain.then(() => loadFile(file, elementId));
+  });
 
-  return promises;
+  return promiseChain;
 }
