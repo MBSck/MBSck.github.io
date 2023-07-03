@@ -41,47 +41,32 @@
 	</head>
 	<body class="is-preload">
 
-
 		<!-- Header -->
 		<header id="header"></header>
 
 		<!-- Main -->
-		<div id="main">
+		<div id="main"></div>
 
-        <!-- Overview -->
-				<section id="Overview">
-					<header class="major">
-						<div class="box alt">
-							<div class="row gtr-50 gtr-uniform">
-								<div class="col-4"><a href="#About"><span class="image fit"><img src="images/thumbs/About.jpg" alt="" /><p class="text" style="color:white; font-size:25px;">About Myself</p></span></a></div>
-								<div class="col-4"><a href="#Research"><span class="image fit"><img src="images/thumbs/Research.jpg" alt="" /><p class="text" style="color:white; font-size:25px;">Research</p></span></a></div>
-								<div class="col-4"><a href="#Publications"><span class="image fit"><img src="images/thumbs/Publications.jpg" alt="" /><p class="text" style="color:white; font-size:25px;">Publications</p></span></a></div>
-                                  <div class="col-4"><a href="#Code"><span class="image fit"><img src="images/thumbs/Code.jpg" alt="" /><p class="text" style="color:white; font-size:25px;">Code</p></span></a></div>
-								<div class="col-4"><a href="#Miscellaneous"><span class="image fit"><img src="images/thumbs/General.jpg" alt="" /><p class="text" style="color:white; font-size:25px;">Miscellaneous</p></span></a></div>
-								<div class="col-4"><a href="#Contact"><span class="image fit"><img src="images/thumbs/Contact.jpg" alt="" /><p class="text" style="color:white; font-size:25px;">Contact</p></span></a></div>
-							</div>
-						</div>
-          </header>
-				</section>
+		<!-- Footer -->
+		<footer id="footer"></footer>
 
-			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<link rel="import" href="html/frontpage/footer.html">
-			</footer>
-
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-  		<script src="assets/js/tools.js"></script>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+  	<script src="assets/js/tools.js"></script>
 	</body>
 	<script>
     includeHTML("html/frontpage/header.html", "header");
-    includeHTML("html/frontpage/header.html", "header");
+    includeHTML("html/frontpage/main/about.html", "main");
+    includeHTML("html/frontpage/main/research.html", "main");
+    includeHTML("html/frontpage/main/publications.html", "main");
+    includeHTML("html/frontpage/main/code.html", "main");
+    includeHTML("html/frontpage/main/miscallaneous.html", "main");
+    includeHTML("html/frontpage/main/contact.html", "main");
+    includeHTML("html/frontpage/footer.html", "footer");
 	</script>
 </html>
