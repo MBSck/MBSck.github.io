@@ -18,8 +18,8 @@ function getCurrentYear() {
 }
 
 function includeHTML(filesAndIds) {
-  const promises = filesAndIds.map(({ file, elementId }) =>
-    fetch(file)
+  const loadFile = (file, elementId) => {
+    return fetch(file)
       .then(response => {
         if (response.ok) {
           return response.text();
@@ -38,8 +38,13 @@ function includeHTML(filesAndIds) {
       })
       .catch(error => {
         console.error('Error including HTML:', error);
-      })
-  );
+      });
+  };
 
-  return Promise.all(promises);
+  // Load files sequentially in order
+  const promises = filesAndIds.reduce((chain, { file, elementId }) => {
+    return chain.then(() => loadFile(file, elementId));
+  }, Promise.resolve());
+
+  return promises;
 }
