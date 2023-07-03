@@ -1,5 +1,3 @@
-<script src="../../../assets/js/tools.js"></script>
-
 <div class="inner">
 	<ul class="icons">
 		<li><a href="https://twitter.com/MartenScheuck" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -7,6 +5,11 @@
     <li><a href="https://www.linkedin.com/in/marten-scheuck/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 	</ul>
 	<ul class="copyright">
-		<li>&copy; Marten Scheuck <script>getCurrentYear()</script></li>
+  	<li>&copy; Marten Scheuck <span id="currentYear"></span></li>
 	</ul>
 </div>
+
+<script src="../../../assets/js/tools.js"></script>
+<script>
+	document.getElementById("currentYear").textContent = getCurrentYear();
+</script>
