@@ -41,10 +41,9 @@
 	</head>
 	<body class="is-preload">
 
+
 		<!-- Header -->
-		<header id="header">
-				<link rel="import" href="html/frontpage/header.html">
-		</header>
+		<header id="header"></header>
 
 		<!-- Main -->
 		<div id="main">
@@ -65,23 +64,6 @@
           </header>
 				</section>
 
-				<script>
-  				document.addEventListener("DOMContentLoaded", function() {
-    				const includeContainer = document.getElementById("includedContent");
-    				const httpRequest = new XMLHttpRequest();
-    				const fileURL = "frontpage/main.html";
-
-    				httpRequest.onreadystatechange = function() {
-      				if (httpRequest.readyState === 4 && httpRequest.status === 200) {
-        				includeContainer.innerHTML = httpRequest.responseText;
-      				}
-    				};
-
-    				httpRequest.open("GET", fileURL, true);
-    				httpRequest.send();
-  				});
-				</script>
-
 			</div>
 
 			<!-- Footer -->
@@ -96,5 +78,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+  		<script src="assets/js/tools.js"></script>
 	</body>
+	<script>
+    includeHTML("html/frontpage/header.html", "header");
+    includeHTML("html/frontpage/header.html", "header");
+	</script>
 </html>
