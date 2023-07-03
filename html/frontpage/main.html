@@ -1,0 +1,17 @@
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const includeContainer = document.getElementById("includedContent");
+    const httpRequest = new XMLHttpRequest();
+    const fileURL = "main/about.html";
+
+    httpRequest.onreadystatechange = function() {
+      if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+        includeContainer.innerHTML = httpRequest.responseText;
+      }
+    };
+
+    httpRequest.open("GET", fileURL, true);
+    httpRequest.send();
+  });
+</script>

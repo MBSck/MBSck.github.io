@@ -43,7 +43,7 @@
 
 		<!-- Header -->
 		<header id="header">
-
+				<link rel="import" href="html/frontpage/header.html">
 		</header>
 
 		<!-- Main -->
@@ -65,12 +65,28 @@
           </header>
 				</section>
 
-				<link rel="import" href="html/frontpage/main/about.html">
+				<script>
+  				document.addEventListener("DOMContentLoaded", function() {
+    				const includeContainer = document.getElementById("includedContent");
+    				const httpRequest = new XMLHttpRequest();
+    				const fileURL = "frontpage/main.html";
+
+    				httpRequest.onreadystatechange = function() {
+      				if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+        				includeContainer.innerHTML = httpRequest.responseText;
+      				}
+    				};
+
+    				httpRequest.open("GET", fileURL, true);
+    				httpRequest.send();
+  				});
+				</script>
+
 			</div>
 
-			<!-- Footer - Social Media -->
+			<!-- Footer -->
 			<footer id="footer">
-
+				<link rel="import" href="html/frontpage/footer.html">
 			</footer>
 
 			<!-- Scripts -->
