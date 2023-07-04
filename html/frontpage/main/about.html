@@ -3,7 +3,7 @@
 	<header class="major">
 		<h2>About myself</h2>
 	</header>
-  <p>My name is Marten Scheuck. I am <span id="age"></span> years old and at the moment pursuing my PhD in astronomy
+  <p>My name is Marten Scheuck. I am at the moment pursuing my PhD in astronomy
   at the Max-Planck-Institute of Astronomy (MPIA) in Heidelberg.<br><br>
 	It has always been my dream to contribute to contemporary science. This is why I decided on conducting research in the field of astronomy.<br>
 	I am especially interested in combining up-to-date programming techniques with observational data.<br><br>
@@ -18,29 +18,3 @@
   </ul>
   </p>
 </section>
-
-<script>
-function calculateAge(birthday) {
-  const birthDate = new Date(birthday);
-  const today = new Date();
-  
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const monthDiff = today.getMonth() - birthDate.getMonth();
-  
-  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
-  
-  return age;
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const birthday = '1995-12-01';
-  const age = calculateAge(birthday);
-  document.getElementById("age").textContent = age
-});
-}
-</script>
-<script>
-</script>
