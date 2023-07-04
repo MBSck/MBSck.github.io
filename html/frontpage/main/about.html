@@ -3,8 +3,14 @@
 	<header class="major">
 		<h2>About myself</h2>
 	</header>
-  <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>My name is Marten Scheuck. I am 25 years old and at the moment pursuing my PhD in astronomy at the Max-Planck-Institute of Astronomy in Heidelberg.<br><br>
+  <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>My name is Marten Scheuck. I am <span id="age"></span> years old and at the moment pursuing my PhD in astronomy
+  at the Max-Planck-Institute of Astronomy in Heidelberg.<br><br>
 	It has always been my dream to contribute to the contemporary science and do so in the field of astronomy.<br>
 	I am especially interested in combining up-to-date programming techniques with observational data.<br><br>
 	A few hobbies of mine are digital drawing, coding in my freetime, and a few other things, such as playing the piano/guitar, dancing, learning languages and doing karate (空手).</p>
 </section>
+
+<script src="../../../../assets/js/tools.js"></script>
+<script>
+	document.getElementById("age").textContent = calculateAge("1995-12-01");
+</script>
