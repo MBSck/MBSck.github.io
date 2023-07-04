@@ -42,13 +42,29 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-		<header id="header"></header>
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+				<h1><strong>I am Marten Scheuck</strong><br/> A PhD-student in astronomy at the MPIA</h1>
+			</div>
+		</header>
 
 		<!-- Main -->
 		<div id="main"></div>
 
 		<!-- Footer -->
-		<footer id="footer"></footer>
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://mathstodon.xyz/@MBSck" class="icon brands fa-mastodon"><span class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/MBSck" class="icon brands fa-github"><span class="label">Github</span></a></li>
+    			<li><a href="https://www.linkedin.com/in/marten-scheuck/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+				<ul class="copyright">
+  				<li>&copy; Marten Scheuck <span id="currentYear"></span></li>
+				</ul>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -60,9 +76,6 @@
   	<script src="assets/js/tools.js"></script>
 	</body>
 	<script>
-		includeHTML([{ file: "html/frontpage/header.html", elementId: "header" }]);
-	</script>
-	<script>
 		includeHTML([
     		{ file: "html/frontpage/main/about.html", elementId: "main" },
     		{ file: "html/frontpage/main/research.html", elementId: "main" },
@@ -72,8 +85,6 @@
   		]);
 	</script>
 	<script>
-  		includeHTML([
-    		{ file: "html/frontpage/footer.html", elementId: "footer" }
-  		]);
+		document.getElementById("currentYear").textContent = getCurrentYear();
 	</script>
 </html>
