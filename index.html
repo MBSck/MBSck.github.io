@@ -60,17 +60,21 @@
   	<script src="assets/js/tools.js"></script>
 	</body>
 	<script>
+		includeHTML([{ file: "html/frontpage/header.html", elementId: "header" }]);
+	</script>
+	<script>
 		includeHTML([
-  		{ file: "html/frontpage/header.html", elementId: "header" }
-		]).then(() => includeHTML([
     		{ file: "html/frontpage/main/about.html", elementId: "main" },
     		{ file: "html/frontpage/main/research.html", elementId: "main" },
     		{ file: "html/frontpage/main/publications.html", elementId: "main" },
     		{ file: "html/frontpage/main/code.html", elementId: "main" },
     		{ file: "html/frontpage/main/miscellaneous.html", elementId: "main" },
     		{ file: "html/frontpage/main/contact.html", elementId: "main" }
-  		])).then(() => includeHTML([
+  		]);
+	</script>
+	<script>
+  		includeHTML([
     		{ file: "html/frontpage/footer.html", elementId: "footer" }
-  		]));
+  		]);
 	</script>
 </html>
