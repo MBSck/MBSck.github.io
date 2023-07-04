@@ -14,7 +14,7 @@
 	  <li>Playing the guitar and the piano</li>
 	  <li>Standard dancing (also Salsa)</li>
 	  <li>Learning in general, but especially languages and history</li>
-	  <li>Doingdoing karate (空手)</li>
+	  <li>Doing karate (空手)</li>
   </ul>
   </p>
 </section>
@@ -33,7 +33,14 @@ function calculateAge(birthday) {
   
   return age;
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const birthday = '1995-12-01';
+  const age = calculateAge(birthday);
+  document.getElementById("age").textContent = age
+});
+}
 </script>
 <script>
-	document.getElementById("age").textContent = calculateAge("1995-12-01");
 </script>
