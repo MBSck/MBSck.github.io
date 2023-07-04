@@ -9,3 +9,22 @@
 	I am especially interested in combining up-to-date programming techniques with observational data.<br><br>
 	A few hobbies of mine are digital drawing, coding in my freetime, and a few other things, such as playing the piano/guitar, dancing, learning languages and doing karate (空手).</p>
 </section>
+
+<script>
+function calculateAge(birthday) {
+  const birthDate = new Date(birthday);
+  const today = new Date();
+  
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  
+  return age;
+}
+</script>
+<script>
+	document.getElementById("age").textContent = calculateAge("1995-12-01");
+</script>
